@@ -1,0 +1,10 @@
+'use strict'
+
+var mongoose = require('mongoose');
+
+mongoose.Promise = grobal.Promise;
+mongoose.connect('mongodb://localhost:27017/api_rest_node', { useNewUrlParser: true })
+    .then(() => {
+        console.log('La conexión a la BD de Mongo se ha realizado con exito!!!');
+    }),
+        catch (error => console.log(error));
