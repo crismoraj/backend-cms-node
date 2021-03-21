@@ -16,3 +16,8 @@ mongoose.connect('mongodb://localhost:27017/api_rest_node', { useUnifiedTopology
         });
     }).
     catch(error => console.log(error));
+
+    /*
+						   mongodb+srv://Bebehmoso6:<password>@cluster0.awdpf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+$ heroku config:set DB_URI=mongodb://<db_user>:<db_password>@ds045715.mlab.com:45715/<db_name>
+    */
